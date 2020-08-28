@@ -1,0 +1,70 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.5rem;
+}
+.skill_list {
+  display: grid;
+  grid-area: 1;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3%;
+}
+.info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info div p {
+  font-size: 1.4rem;
+}
+.info div .tiny {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.flexed {
+  display: flex;
+}
+.flexed .skills {
+  width: 40%;
+}
+.flexed .skills .skill_list {
+  padding: 0 3%;
+}
+.flexed .education {
+  width: 60%;
+  padding: 0 5% 1%;
+}
+section {
+  border: dotted 1px green;
+}
