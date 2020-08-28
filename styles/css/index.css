@@ -52,19 +52,35 @@ h6 {
   font-size: 1rem;
   font-weight: 600;
 }
-.flexed {
+.education .flexed {
   display: flex;
+  flex-direction: row;
+  border: 1px solid purple;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0%;
 }
-.flexed .skills {
-  width: 40%;
+.education .flexed .p {
+  height: 0%;
+  margin: 0%;
+  padding: 0%;
 }
-.flexed .skills .skill_list {
+.skills .skill_list {
   padding: 0 3%;
 }
-.flexed .education {
-  width: 60%;
-  padding: 0 5% 1%;
+.lambda_school {
+  font-size: 2.5rem;
 }
 section {
   border: dotted 1px green;
+  padding: 2%;
+}
+.left {
+  width: 30%;
+}
+.right {
+  width: 70%;
+}
+.main {
+  display: flex;
 }

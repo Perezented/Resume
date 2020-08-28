@@ -54,20 +54,37 @@ h6 {
         }
     }
 }
-.flexed {
+.education .flexed {
     display: flex;
-    .skills {
-        width: 40%;
-        .skill_list {
-            padding: 0 3%;
-        }
-    }
-    .education {
-        width: 60%;
-        padding: 0 5% 1%;
+    flex-direction: row;
+    border: 1px solid purple;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0%;
+    .p {
+        height: 0%;
+        margin: 0%;
+        padding: 0%;
     }
 }
-
+.skills {
+    .skill_list {
+        padding: 0 3%;
+    }
+}
+.lambda_school {
+    font-size: 2.5rem;
+}
 section {
     border: dotted 1px green;
+    padding: 2%;
+}
+.left {
+    width: 30%;
+}
+.right {
+    width: 100%-30%;
+}
+.main {
+    display: flex;
 }
