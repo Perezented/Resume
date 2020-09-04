@@ -1,134 +1,176 @@
 html {
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
 }
 h1,
 h2,
 h3 {
-    text-align: left;
-    margin: 0;
-    padding: 0;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+h3,
+h4,
+h5 {
+  background-color: rgb(236, 236, 236);
+  width: fit-content;
+  padding: 0.5%;
 }
 h1 {
-    font-size: 4.5rem;
+  font-size: 7rem;
 }
 h2 {
-    font-size: 3.8rem;
+  font-size: 3.8rem;
+  font-weight: 400;
 }
 h3 {
-    font-size: 3.2rem;
+  font-size: 3.4rem;
 }
 h4 {
-    font-size: 2.5rem;
+  font-size: 3rem;
 }
 h5 {
-    font-size: 2rem;
+  font-size: 2.5rem;
 }
 h6 {
-    font-size: 1.8rem;
+  font-size: 2rem;
 }
 p {
-    font-size: 1.5rem;
-    margin: 0.1rem 0;
+  font-size: 1.8rem;
+  margin: 0.1rem 0;
+}
+a {
+  font-size: 2.2rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
 }
 li {
-    font-size: 1.1rem;
-    padding: 0.1rem 0;
+  font-size: 1.5rem;
+  padding: 0.1rem 0;
 }
-.skill_list {
-    display: grid;
-    grid-area: 2/2;
 
-    // grid-template-columns: repeat(5, 1fr);
-}
 .info {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  h4 {
+    margin: 4% 0;
+  }
+  div {
     display: flex;
     flex-direction: column;
-    padding: 2% 3%;
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        p {
-            font-size: 1.4rem;
-            margin: 1% 0 1% 3%;
-        }
-        .tiny {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-left: 0;
-        }
+    justify-content: space-between;
+    margin: 1.5% 0;
+    h6 {
+      padding: 1%;
+      margin: 0;
     }
+  }
+  .sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    a {
+      margin: 0 2%;
+    }
+  }
 }
+
 .education {
-    .too_tall {
-        margin: 0;
-        padding: 0;
-        height: 6rem;
+  .too_tall {
+    margin: 0;
+    padding: 0;
+    height: 6rem;
+  }
+  .flexed {
+    display: flex;
+    flex-direction: row;
+    // border: 1px solid purple;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0% auto;
+    width: 80%;
+    .p {
+      height: 0%;
+      margin: 0%;
+      padding: 0%;
     }
-    .flexed {
-        display: flex;
-        flex-direction: row;
-        // border: 1px solid purple;
-        justify-content: space-between;
-        align-content: center;
-        margin: 0% auto;
-        width: 80%;
-        .p {
-            height: 0%;
-            margin: 0%;
-            padding: 0%;
-        }
-    }
+  }
 }
 .skills {
-    .skill_list {
-        padding: 0 3%;
-        h5 {
-            margin: 0;
-            padding: 0;
-        }
-        p {
-            margin: 2% 3%;
-        }
+  h3 {
+    margin-bottom: 1%;
+  }
+  .skill_list {
+    display: grid;
+    grid-area: 2/2;
+    padding: 1% 3%;
+    h5 {
+      margin: 1% 0 2%;
+      padding: 0;
     }
+    p {
+      margin: 2% 3%;
+    }
+  }
+}
+.projects {
+  a {
+    margin: 0 1%;
+  }
+  li {
+    margin: 1% 0;
+  }
+  .project_titles {
+    // border: 1px solid green;
+    display: flex;
+    i {
+      margin: auto 0 auto 2%;
+    }
+    h5 {
+      // border: 1px solid blue;
+      margin-left: 3%;
+    }
+  }
 }
 .lambda_school {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 section {
-    // border: dotted 1px green;
-    padding: 2%;
+  // border: dotted 1px green;
+  padding: 2%;
 }
+@left: 30%;
 .left {
-    width: 30%;
+  width: @left;
 }
 .right {
-    width: 100%-30%;
+  width: 100%-@left;
+  margin-left: 1%;
 }
 .main {
-    display: flex;
+  display: flex;
 }
-@dark_blue: rgb(255, 255, 255);
-@border_style: @dark_blue ridge 10px;
+@ridge_color: rgba(223, 223, 223, 0.322);
+@border_style: @ridge_color ridge 10px;
 .title {
-    border-bottom: @border_style;
+  border-bottom: @border_style;
 }
 .exp {
-    border-top: @border_style;
-    h4 {
-        padding: 0;
-        margin: 1%;
-    }
+  border-top: @border_style;
+  h4 {
+    padding: 0;
+    margin: 1%;
+  }
 }
 // width: 100%;
-.skills,
-.info {
-    border-right: @border_style;
+.left {
+  border-right: @border_style;
 }

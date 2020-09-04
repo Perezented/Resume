@@ -2,80 +2,102 @@ html {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   display: grid;
 }
 h1,
 h2,
 h3 {
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
+h3,
+h4,
+h5 {
+  background-color: #ececec;
+  width: fit-content;
+  padding: 0.5%;
+}
 h1 {
-  font-size: 4.5rem;
+  font-size: 7rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3.8rem;
+  font-weight: 400;
 }
 h3 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
 }
 h4 {
   font-size: 3rem;
 }
 h5 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h6 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0.1rem 0;
 }
-li {
-  font-size: 1.1rem;
-  padding: 0.1rem 0;
+a {
+  font-size: 2.2rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
 }
-.skill_list {
-  display: grid;
-  grid-area: 1;
+li {
+  font-size: 1.5rem;
+  padding: 0.1rem 0;
 }
 .info {
   display: flex;
   flex-direction: column;
-  padding: 2% 3%;
+  padding: 3%;
+}
+.info h4 {
+  margin: 4% 0;
 }
 .info div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1.5% 0;
 }
-.info div p {
-  font-size: 1.4rem;
-  margin: 1% 0 1% 3%;
+.info div h6 {
+  padding: 1%;
+  margin: 0;
 }
-.info div .tiny {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 0;
+.info .sidebyside {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
-.education h4 {
-  padding: 0%;
-  margin: 0%;
+.info .sidebyside h4,
+.info .sidebyside h5 {
+  width: 35%;
+  margin: 0;
+  padding: 0;
+}
+.info .sidebyside a {
+  margin: 0 2%;
+}
+.education .too_tall {
+  margin: 0;
+  padding: 0;
+  height: 6rem;
 }
 .education .flexed {
   display: flex;
   flex-direction: row;
-  border: 1px solid purple;
   justify-content: space-between;
   align-content: center;
   margin: 0% auto;
-  height: 5rem;
   width: 80%;
 }
 .education .flexed .p {
@@ -83,21 +105,31 @@ li {
   margin: 0%;
   padding: 0%;
 }
+.skills h3 {
+  margin-bottom: 1%;
+}
 .skills .skill_list {
-  padding: 0 3%;
+  display: grid;
+  grid-area: 1;
+  padding: 1% 3%;
 }
 .skills .skill_list h5 {
-  margin: 0;
+  margin: 1% 0 2%;
   padding: 0;
 }
 .skills .skill_list p {
   margin: 2% 3%;
 }
+.projects a {
+  margin: 0 1%;
+}
+.projects li {
+  margin: 1% 0;
+}
 .lambda_school {
   font-size: 2.5rem;
 }
 section {
-  border: dotted 1px green;
   padding: 2%;
 }
 .left {
@@ -105,7 +137,21 @@ section {
 }
 .right {
   width: 70%;
+  margin-left: 1%;
 }
 .main {
   display: flex;
+}
+.title {
+  border-bottom: #f0f0f0 ridge 10px;
+}
+.exp {
+  border-top: #f0f0f0 ridge 10px;
+}
+.exp h4 {
+  padding: 0;
+  margin: 1%;
+}
+.left {
+  border-right: #f0f0f0 ridge 10px;
 }
