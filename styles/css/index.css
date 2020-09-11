@@ -5,7 +5,7 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: grid;
 }
@@ -32,13 +32,13 @@ h3 {
   font-size: 3.5rem;
 }
 h4 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 h5 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 h6 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 p {
   font-size: 1.5rem;
@@ -135,6 +135,7 @@ section {
 }
 .left {
   width: 30%;
+  padding-left: 1%;
 }
 .right {
   width: 70%;
@@ -151,7 +152,12 @@ section {
 }
 .exp h4 {
   padding: 0;
-  margin: 1%;
+}
+.exp .flexed {
+  display: flex;
+}
+.exp .flexed h6 {
+  margin: 3%;
 }
 .left {
   border-right: rgba(223, 223, 223, 0.322) ridge 10px;
