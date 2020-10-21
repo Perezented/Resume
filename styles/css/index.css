@@ -79,6 +79,9 @@ li {
 .info .sidebyside a {
   margin: 0 2%;
 }
+.edu {
+  border-top: rgba(223, 223, 223, 0.322) ridge 10px;
+}
 .education .too_tall {
   margin: 0;
   padding: 0;
@@ -148,7 +151,7 @@ section {
   border-bottom: rgba(223, 223, 223, 0.322) ridge 10px;
 }
 .exp {
-  border-top: rgba(223, 223, 223, 0.322) ridge 10px;
+  border-bottom: rgba(223, 223, 223, 0.322) ridge 10px;
 }
 .exp h4 {
   padding: 0;
